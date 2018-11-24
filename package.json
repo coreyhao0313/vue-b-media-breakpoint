@@ -1,7 +1,7 @@
 {
   "name": "vue-b-overview",
   "version": "1.0.0",
-  "description": "vue bootstrap overview",
+  "description": "vue-b-media-breakpoint is like bootstrap 4 responsive breakpoints that js tool",
   "main": "src/vue-b-media-breakpoint.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
