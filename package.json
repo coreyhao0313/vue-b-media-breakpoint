@@ -1,0 +1,14 @@
+{
+  "name": "vue-b-overview",
+  "version": "1.0.0",
+  "description": "vue bootstrap overview",
+  "main": "src/vue-b-media-breakpoint.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "coreyhao",
+  "license": "ISC",
+  "dependencies": {
+    "media-queries": "https://github.com/clossweb/media-queries/archive/master.tar.gz"
+  }
+}
