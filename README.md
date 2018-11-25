@@ -16,7 +16,7 @@ Vue.use(vueBMediaBreakpoint);
 
 <h3>Usage</h3>
 
-using `$mediaBreakpoint` or `$Bmb` <br>
+using `$mediaBreakpoint` or `$Bmb` to get responsive breakpoints of status with type of boolean  <br>
 `$mediaBreakpoint` has properties that [down, only, up] type <br>
 up includes [sm, md, lg, xl] size <br>
 only includes [xs, sm, md, lg, xl] size <br>
@@ -86,6 +86,16 @@ down includes [xs, sm, md, lg] size <br>
       ...xl
     </div>
 ```
-
+set watch
+```vue
+    watch     : {
+      $Bmb: {
+        handler (_$Bmb) {
+          // do something when every changed
+        },
+        deep: true
+      }
+    }
+```
 
 every breakpoint refer [Bootstrap Layout](https://getbootstrap.com/docs/4.0/layout/overview/)
