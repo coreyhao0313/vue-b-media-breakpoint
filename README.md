@@ -25,7 +25,7 @@ down includes [xs, sm, md, lg] size <br>
 `$Bmb.between` is a function that just like `media-breakpoint-between` sass mixin
 ```vue
 
-    <div v-if="$Bmb.up.sm">
+    <div v-if="$mediaBreakpoint.up.sm">
       media-breakpoint-up(sm) = (min-width: 576px)
     </div>
 
@@ -42,7 +42,7 @@ down includes [xs, sm, md, lg] size <br>
     </div>
 
 
-    <div v-if="$Bmb.only.xs">
+    <div v-if="$mediaBreakpoint.only.xs">
       media-breakpoint-only(xs) = (max-width: 575.98px)
     </div>
 
@@ -63,7 +63,7 @@ down includes [xs, sm, md, lg] size <br>
     </div>
 
 
-    <div v-if="$Bmb.down.xs">
+    <div v-if="$mediaBreakpoint.down.xs">
       media-breakpoint-down(xs) = (max-width: 575.98px)
     </div>
 
