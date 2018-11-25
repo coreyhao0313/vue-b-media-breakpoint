@@ -149,7 +149,9 @@ export default {
           lg: false
         },
         between: new Function
-      }
+      };
+      
+      Vue.prototype.$Bmb = Vue.prototype.$mediaBreakpoint;
     }
 
   }
