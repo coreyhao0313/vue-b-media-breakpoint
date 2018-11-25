@@ -1,14 +1,19 @@
 {
-  "name": "vue-b-overview",
+  "name": "vue-b-media-breakpoint",
   "version": "1.0.0",
   "description": "vue-b-media-breakpoint is like bootstrap 4 responsive breakpoints that js tool",
-  "main": "src/vue-b-media-breakpoint.js",
+  "main": "dist/vue-b-media-breakpoint.js",
   "scripts": {
+    "build": "rm -rf dist/ && babel src -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "coreyhao",
   "license": "ISC",
   "dependencies": {
     "media-queries": "https://github.com/clossweb/media-queries/archive/master.tar.gz"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
   }
 }

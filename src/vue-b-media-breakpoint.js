@@ -1,4 +1,4 @@
-const media = require('media-queries');
+import media from 'media-queries';
 
 export default {
   install: function (Vue, options) {
