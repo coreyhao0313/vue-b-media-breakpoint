@@ -22,7 +22,7 @@ up includes [sm, md, lg, xl] size <br>
 only includes [xs, sm, md, lg, xl] size <br>
 down includes [xs, sm, md, lg] size <br>
 `$Bmb`.`[type]`.`[size]` <br>
-`$Bmb.between` is a function that just like media-breakpoint-between sass mixin
+`$Bmb.between` is a function that just like `media-breakpoint-between` sass mixin
 ```vue
 
     <div v-if="$Bmb.up.sm">
