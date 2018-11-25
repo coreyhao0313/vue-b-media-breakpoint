@@ -7,8 +7,6 @@ vue-b-media-breakpoint is like bootstrap 4 responsive breakpoints that js tool
 npm install --save vue-b-media-breakpoint
 ```
 
-<h3>Usage</h3>
-
 ```
 import Vue from 'vue';
 import vueBMediaBreakpoint from 'vue-b-media-breakpoint';
@@ -16,15 +14,71 @@ import vueBMediaBreakpoint from 'vue-b-media-breakpoint';
 Vue.use(vueBMediaBreakpoint);
 ```
 
-<h3>Simple</h3>
+<h3>Usage</h3>
+
+`$mediaBreakpoint` or `$Bmb`
 
 ```vue
-    <div v-if="$mediaBreakpoint.up.lg">
-      test lg
+
+    <div v-if="$Bmb.up.sm">
+      media-breakpoint-up(sm) = (min-width: 576px)
     </div>
 
-    <div>
-      {{ $mediaBreakpoint.between('sm', 'lg') }}
+    <div v-if="$Bmb.up.md">
+      media-breakpoint-up(md) = (min-width: 768px)
+    </div>
+
+    <div v-if="$Bmb.up.lg">
+      media-breakpoint-up(lg) = (min-width: 992px)
+    </div>
+
+    <div v-if="$Bmb.up.xl">
+      media-breakpoint-up(xl) = (min-width: 1200px)
+    </div>
+
+
+    <div v-if="$Bmb.only.xs">
+      media-breakpoint-only(xs) = (max-width: 575.98px)
+    </div>
+
+    <div v-if="$Bmb.only.sm">
+      media-breakpoint-only(sm) = (min-width: 576px) and (max-width: 767.98px)
+    </div>
+
+    <div v-if="$Bmb.only.md">
+      media-breakpoint-only(md) = (min-width: 768px) and (max-width: 991.98px)
+    </div>
+
+    <div v-if="$Bmb.only.lg">
+      media-breakpoint-only(lg) = (min-width: 992px) and (max-width: 1199.98px)
+    </div>
+
+    <div v-if="$Bmb.only.xl">
+      media-breakpoint-only(xl) = (min-width: 1200px)
+    </div>
+
+
+    <div v-if="$Bmb.down.xs">
+      media-breakpoint-down(xs) = (max-width: 575.98px)
+    </div>
+
+    <div v-if="$Bmb.down.sm">
+      media-breakpoint-down(sm) = (max-width: 767.98px)
+    </div>
+
+    <div v-if="$Bmb.down.md">
+      media-breakpoint-down(md) = (max-width: 991.98px)
+    </div>
+
+    <div v-if="$Bmb.down.lg">
+      media-breakpoint-down(lg) = (max-width: 1199.98px)
+    </div>
+
+
+    <div v-if="$Bmb.between('md', 'xl')">
+      media-breakpoint-up(md) = (min-width: 768px)
+      and
+      ...xl
     </div>
 ```
 
