@@ -87,7 +87,7 @@ down includes [xs, sm, md, lg] size <br>
     </div>
 ```
 set watch
-```vue
+```js
     watch     : {
       $Bmb: {
         handler (_$Bmb) {
