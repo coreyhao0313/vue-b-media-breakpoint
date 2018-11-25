@@ -1,6 +1,6 @@
 {
   "name": "vue-b-media-breakpoint",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "vue-b-media-breakpoint is like bootstrap 4 responsive breakpoints that js tool",
   "main": "dist/vue-b-media-breakpoint.js",
   "scripts": {
