@@ -86,7 +86,7 @@ down includes [xs, sm, md, lg] size <br>
       ...xl
     </div>
 ```
-set watch
+set watching
 ```js
     watch     : {
       $Bmb: {
