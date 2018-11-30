@@ -5,7 +5,7 @@ export default {
 
     if (typeof window === 'object') {
 
-      new Vue({
+      Vue.mixin({
         data () {
           return {
             size: {
