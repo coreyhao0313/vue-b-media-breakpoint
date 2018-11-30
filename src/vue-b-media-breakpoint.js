@@ -38,20 +38,21 @@ export default {
           Vue.prototype.$Bmb = Vue.prototype.$mediaBreakpoint;
           Vue.prototype.$Bmb.between = Vue.prototype.$mediaBreakpoint.between;
 
+          this.$nextTick(function () {
+            this.setMediaBreakpointUpEvent(new media())
+              .getStatus(function (status, context) {
+                context.trigger(status.querystrings);
+            });
 
-          this.setMediaBreakpointUpEvent(new media())
-            .getStatus(function (status, context) {
-              context.trigger(status.querystrings);
-          });
+            this.setMediaBreakpointOnlyEvent(new media())
+              .getStatus(function (status, context) {
+                context.trigger(status.querystrings);
+            });
 
-          this.setMediaBreakpointOnlyEvent(new media())
-            .getStatus(function (status, context) {
-              context.trigger(status.querystrings);
-          });
-
-          this.setMediaBreakpointDownEvent(new media())
-            .getStatus(function (status, context) {
-              context.trigger(status.querystrings);
+            this.setMediaBreakpointDownEvent(new media())
+              .getStatus(function (status, context) {
+                context.trigger(status.querystrings);
+            });
           });
         },
         methods: {

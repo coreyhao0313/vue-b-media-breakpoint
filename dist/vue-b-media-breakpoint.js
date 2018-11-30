@@ -50,16 +50,18 @@ exports.default = {
           Vue.prototype.$Bmb = Vue.prototype.$mediaBreakpoint;
           Vue.prototype.$Bmb.between = Vue.prototype.$mediaBreakpoint.between;
 
-          this.setMediaBreakpointUpEvent(new _mediaQueries2.default()).getStatus(function (status, context) {
-            context.trigger(status.querystrings);
-          });
+          this.$nextTick(function () {
+            this.setMediaBreakpointUpEvent(new _mediaQueries2.default()).getStatus(function (status, context) {
+              context.trigger(status.querystrings);
+            });
 
-          this.setMediaBreakpointOnlyEvent(new _mediaQueries2.default()).getStatus(function (status, context) {
-            context.trigger(status.querystrings);
-          });
+            this.setMediaBreakpointOnlyEvent(new _mediaQueries2.default()).getStatus(function (status, context) {
+              context.trigger(status.querystrings);
+            });
 
-          this.setMediaBreakpointDownEvent(new _mediaQueries2.default()).getStatus(function (status, context) {
-            context.trigger(status.querystrings);
+            this.setMediaBreakpointDownEvent(new _mediaQueries2.default()).getStatus(function (status, context) {
+              context.trigger(status.querystrings);
+            });
           });
         },
 
