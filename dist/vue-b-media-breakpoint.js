@@ -17,7 +17,7 @@ exports.default = {
 
     if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) === 'object') {
 
-      new Vue({
+      Vue.mixin({
         data: function data() {
           return {
             size: {
