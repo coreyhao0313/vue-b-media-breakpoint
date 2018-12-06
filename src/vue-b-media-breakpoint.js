@@ -117,23 +117,28 @@ export default {
     Vue.prototype.$Bmb.between = Vue.prototype.$mediaBreakpoint.between;
 
     if (typeof window === 'undefined') {
-      return ;
+      return;
     }
 
-    vm.setMediaBreakpointUpEvent(new media())
-      .getStatus(function (status, context) {
-        context.trigger(status.querystrings);
-      });
+    window.addEventListener('load',
+      function () {
 
-    vm.setMediaBreakpointOnlyEvent(new media())
-      .getStatus(function (status, context) {
-        context.trigger(status.querystrings);
-      });
+        vm.setMediaBreakpointUpEvent(new media())
+          .getStatus(function (status, context) {
+            context.trigger(status.querystrings);
+          });
 
-    vm.setMediaBreakpointDownEvent(new media())
-      .getStatus(function (status, context) {
-        context.trigger(status.querystrings);
-      });
+        vm.setMediaBreakpointOnlyEvent(new media())
+          .getStatus(function (status, context) {
+            context.trigger(status.querystrings);
+          });
+
+        vm.setMediaBreakpointDownEvent(new media())
+          .getStatus(function (status, context) {
+            context.trigger(status.querystrings);
+          });
+
+      }, false);
 
   }
 };
